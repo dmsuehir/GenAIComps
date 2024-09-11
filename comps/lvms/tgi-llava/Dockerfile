@@ -11,7 +11,7 @@ COPY comps /home/comps
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r /home/comps/lvms/tgi-llava/requirements.txt
 
-ENV PYTHONPATH=$PYTHONPATH:/home
+ENV PYTHONPATH=/home
 
 WORKDIR /home/comps/lvms/tgi-llava
 
